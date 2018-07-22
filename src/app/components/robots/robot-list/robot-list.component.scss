@@ -1,0 +1,50 @@
+@import "../../shared.components.style";
+
+.robots-container {
+  display: flex;
+  justify-content: center;
+}
+
+.robot-card {
+  @extend .card;
+  height: 240px;
+  width: 300px;
+  img {
+    margin: 5px 10px 5px 5px;
+  }
+  div {
+    display: flex;
+    &:first-child label {
+      padding-top: 10px;
+    }
+  }
+
+  .robotic-arm {
+    width: 80px;
+    height: 80px;
+    display: inline;
+  }
+
+  .btn-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    // width: 300px;
+    opacity: 0;
+    transition: opacity .35s ease;
+    .material-icons {
+      font-size: 32px;
+      color: rgba(0, 0, 0, 0.36);
+      &:hover {
+        color: rgba(0, 0, 0, 0.84);
+        display: block;
+      }
+    }
+  }
+
+  &:hover .btn-container {
+    opacity: 1;
+  }
+
+}

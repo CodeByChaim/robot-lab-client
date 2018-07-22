@@ -1,0 +1,24 @@
+.card {
+  padding: 5px;
+  min-width: 55px;
+  color: black;
+  border: 1px solid coral;
+  background-color: rgba(249, 249, 249, 0.55);
+  border-radius: 5px;
+  height: 120px;
+  width: 150px;
+  display: inline-block;
+  text-align: left;
+  position: relative;
+  margin-left: 50px;
+  &:hover {
+    //color: white;
+    //animation: neon 1.5s ease-in-out infinite alternate;
+    border: none;
+    outline: none;
+    box-shadow: 3px 1px 8px 5px lightblue;
+  }
+}
+label {
+  font-weight: bold;
+}

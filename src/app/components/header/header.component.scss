@@ -1,0 +1,52 @@
+:host {
+  text-align: center;
+  height: 250px;
+
+  h1 {
+    color: black;
+    font-weight: 800;
+    font-size: 50px;
+    margin: 10px;
+  }
+  .logo {
+    height: 50px;
+  }
+  nav {
+    max-width: 80%;
+    margin: 10px auto;
+    display: flex;
+
+    button {
+      transition: all 0.5s;
+      font-size: 48px;
+      font-weight: 600;
+      flex-grow: 1;
+      flex-basis: 100px;
+      outline: none;
+      cursor: pointer;
+      border-radius: 3px;
+      height: 80px;
+      border-color: transparent;
+      background: transparent;
+      color: coral;
+      &:hover {
+        color: white;
+        animation: neon 1.5s ease-in-out infinite alternate;
+      }
+    }
+    .selected {
+      border: none;
+      outline: none;
+      box-shadow: 3px 1px 10px 5px coral;
+    }
+  }
+}
+
+@keyframes neon {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px coral, 0 0 70px coral, 0 0 80px coral, 0 0 100px coral, 0 0 150px coral;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px coral, 0 0 35px coral, 0 0 40px coral, 0 0 50px coral, 0 0 75px coral;
+  }
+}

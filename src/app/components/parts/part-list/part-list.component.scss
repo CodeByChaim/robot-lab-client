@@ -1,0 +1,49 @@
+@import "../../shared.components.style";
+
+.parts-container {
+  display: flex;
+  justify-content: center;
+}
+
+.part-card {
+  @extend .card;
+  height: 240px;
+  width: 300px;
+  img {
+    margin: 5px;
+  }
+  div {
+    display: flex;
+    &:first-child label {
+      padding-top: 15px;
+    }
+  }
+
+  .part-img {
+    width: 40px;
+    height: 40px;
+    display: inline;
+  }
+
+  .btn-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    // width: 300px;
+    opacity: 0;
+    transition: opacity .35s ease;
+    .material-icons {
+      font-size: 36px;
+      color: rgba(0, 0, 0, 0.36);
+      &:hover {
+        color: rgba(0, 0, 0, 0.84);
+        display: block;
+      }
+    }
+  }
+
+  &:hover .btn-container {
+    opacity: 1;
+  }
+}
