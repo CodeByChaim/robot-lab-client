@@ -12,6 +12,7 @@ import { PartDetailsComponent } from './components/parts/part-details/part-detai
 import { RobotDetailsComponent } from './components/robots/robot-details/robot-details.component';
 import { AddRobotComponent } from './components/robots/robot-add/robot-add.component';
 import { AddPartComponent } from './components/parts/part-add/part-add.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AddPartComponent } from './components/parts/part-add/part-add.component
     PartDetailsComponent,
     RobotDetailsComponent,
     AddRobotComponent,
-    AddPartComponent
+    AddPartComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

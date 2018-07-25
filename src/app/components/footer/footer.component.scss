@@ -1,0 +1,23 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 98%;
+  height: 60px; /* Height of the footer */
+  background: rgba(244, 244, 244, 0.55);
+
+  .author {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer-link {
+    //display: flex;
+    //flex-direction: row;
+    //justify-content: center;
+  }
+}
+
